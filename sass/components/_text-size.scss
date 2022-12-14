@@ -1,65 +1,41 @@
 .c-title-18-400 {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
+  @include fontStyle(400, 18px, 1.56, 0.03em);
   color: $white-color;
 }
 
 .c-title-18-700 {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+  @include fontStyle(700, 18px, 2, 0.06em);
   color: $main-text-color;
 }
 
 .c-title-36 {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
+  @include fontStyle(700, 36px, 1.67, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   color: $main-text-color;
 }
 
 .c-title-14-500 {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include fontStyle(500, 14px, 1.14, 0.02em);
   color: $main-text-color;
 }
 
 .c-title-14-700 {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include fontStyle(700, 14px, 1.14, 0.03em);
   color: $main-text-color;
 }
 
 .c-title-44 {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  @include fontStyle(900, 44px, 1.36, 0.06em);
   text-align: center;
-  letter-spacing: 0.06em;
   color: $white-color;
 }
 
 .c-title-16-500 {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+  @include fontStyle(500, 16px, 1.19, 0.03em);
   color: $main-text-color;
 }
 
 .c-title-16-400 {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+  @include fontStyle(400, 16px, 1.19, 0.03em);
   color: $second-text-color;
 }

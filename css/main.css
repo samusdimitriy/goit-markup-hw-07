@@ -128,9 +128,9 @@ body {
 .c-title-36 {
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
-  text-align: center;
+  line-height: 1.67;
   letter-spacing: 0.03em;
+  text-align: center;
   color: #212121;
 }
 
@@ -154,8 +154,8 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
+  text-align: center;
   color: #ffffff;
 }
 
@@ -734,7 +734,7 @@ body {
 }
 
 .close-btn:focus .close-btn__icon, .close-btn:hover .close-btn__icon {
-  fill: var(--accent-text-color);
+  fill: #2196f3;
 }
 
 ::-webkit-input-placeholder {
