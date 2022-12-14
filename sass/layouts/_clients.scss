@@ -1,0 +1,36 @@
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  text-align: center;
+  &__titel {
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+  &__container {
+    display: flex;
+  }
+}
+
+.company__list {
+  @extend %list;
+  margin: 0;
+  gap: 30px;
+  padding: 0;
+}
+
+.company__link {
+  @extend %position;
+  border: 1px solid #ececec;
+  border-color: rgba(175, 177, 184, 1);
+  border-radius: 4px;
+  min-width: 170px;
+  min-height: 92px;
+  justify-content: center;
+  fill: var(--color-icon);
+  transition: fill var(--transition), border-color var(--transition);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-text-color);
+    fill: var(--accent-text-color);
+  }
+}

@@ -1,0 +1,32 @@
+.advances {
+  &__container {
+    margin-top: 94px;
+    margin-bottom: 94px;
+  }
+  &__list {
+    @extend %list;
+    display: flex;
+    padding-left: 0;
+    gap: 30px;
+  }
+}
+
+.block-svg {
+  @extend %position;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  &__title {
+    @extend %upper-text;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--second-text-color);
+  }
+}

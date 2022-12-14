@@ -1,0 +1,82 @@
+/* Header */
+
+.page-header {
+  border-bottom: 1px solid #ececec;
+  &__container {
+    @extend %position;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    height: 80px;
+  }
+}
+
+.logo {
+  @extend %link;
+  display: flex;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  margin-left: 0;
+  &--accent {
+    color: var(--accent-text-color);
+  }
+}
+
+/* Site nav */
+
+.site-nav {
+  @extend %list;
+  display: flex;
+  margin-left: 93px;
+  gap: 50px;
+  &__link--current::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+    border-radius: 2px;
+    background: var(--accent-text-color);
+  }
+  &__link {
+    @extend %link;
+    padding: 32px 0 34px;
+    color: var(--main-text-color);
+  }
+  &__link--current {
+    color: var(--accent-text-color);
+    position: relative;
+  }
+  &__link:hover,
+  &__link:focus {
+    color: var(--accent-text-color);
+    fill: currentColor;
+  }
+}
+
+/*  Auth nav  */
+
+.auth-nav {
+  @extend %list;
+  display: flex;
+  margin-left: auto;
+  gap: 30px;
+  &__link {
+    @extend %link;
+    @extend %position;
+    padding: 30px auto;
+    color: var(--second-text-color);
+    fill: currentColor;
+  }
+  &__icon {
+    margin-right: 10px;
+  }
+  &__link:hover,
+  &__link:focus {
+    color: var(--accent-text-color);
+  }
+}
