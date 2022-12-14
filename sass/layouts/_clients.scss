@@ -26,11 +26,11 @@
   min-width: 170px;
   min-height: 92px;
   justify-content: center;
-  fill: var(--color-icon);
-  transition: fill var(--transition), border-color var(--transition);
+  fill: $color-icon;
+  transition: fill $transition, border-color $transition;
   &:hover,
   &:focus {
-    border-color: var(--accent-text-color);
-    fill: var(--accent-text-color);
+    border-color: $accent-text-color;
+    fill: $accent-text-color;
   }
 }

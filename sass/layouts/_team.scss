@@ -10,7 +10,7 @@
   @extend %list;
   gap: 30px;
   &__item {
-    background-color: var(--white-color);
+    background-color: $white-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -45,12 +45,12 @@
     width: 44px;
     height: 44px;
     background: inherit;
-    fill: var(--color-icon);
-    transition: fill var(--transition), background var(--transition);
+    fill: $color-icon;
+    transition: fill $transition, background $transition;
   }
   &__link:hover,
   &__link:focus {
-    background-color: var(--accent-text-color);
-    fill: var(--white-color);
+    background-color: $accent-text-color;
+    fill: $white-color;
   }
 }

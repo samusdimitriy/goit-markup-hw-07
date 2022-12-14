@@ -21,7 +21,7 @@
     padding: 63px 24px;
     margin: 0;
     opacity: 0;
-    transition: opacity var(--transition);
+    transition: opacity $transition;
     overflow: auto;
   }
 
@@ -60,7 +60,7 @@
   &__item {
     background: #ffffff;
     box-shadow: none;
-    transition: box-shadow var(--transition);
+    transition: box-shadow $transition;
   }
   &__hover {
     position: relative;

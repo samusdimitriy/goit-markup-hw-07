@@ -1,7 +1,7 @@
 .footer {
   display: flex;
-  color: var(--white-color);
-  background-color: var(--background-color);
+  color: §white-color;
+  background-color: $background-color;
   padding-top: 60px;
   padding-bottom: 60px;
   max-width: inherit;
@@ -49,7 +49,7 @@
   }
   &__sub-icon {
     margin-left: 10px;
-    fill: var(--white-color);
+    fill: $white-color;
   }
   &__link {
     @extend %link;
@@ -64,8 +64,11 @@
   }
   &__sub-title {
     @extend %upper-text;
-    color: var(--white-color);
+    color: $white-color;
     margin-bottom: 20px;
+  }
+  &__logo {
+    color: $white-color;
   }
 }
 
@@ -83,7 +86,7 @@
     @extend %upper-text;
     margin-top: 0;
     margin-bottom: 20px;
-    color: var(--white-color);
+    color: $white-color;
   }
 }
 
